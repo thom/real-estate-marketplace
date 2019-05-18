@@ -2,7 +2,7 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
-# Project Resources
+## Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -12,3 +12,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 * [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
 * [Docker](https://docs.docker.com/install/)
 * [ZoKrates](https://github.com/Zokrates/ZoKrates)
+
+## Requirements
+
+Graded according to the [Project Rubric](https://review.udacity.com/#!/rubrics/1712/view).
