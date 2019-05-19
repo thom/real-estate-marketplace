@@ -61,3 +61,10 @@ Graded according to the [Project Rubric](https://review.udacity.com/#!/rubrics/1
 * [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
 * [Docker](https://docs.docker.com/install/)
 * [ZoKrates](https://github.com/Zokrates/ZoKrates)
+
+## Versions
+
+* Truffle v5.0.18 (core: 5.0.18)
+* Solidity - ^0.5.2 (solc-js)
+* Node v10.15.3
+* Web3.js v1.0.0-beta.37
