@@ -38,6 +38,7 @@ contract("TestSolnSquareVerifier", accounts => {
       result = true;
     } 
     catch(e) {
+      console.log(e);
       result = false;
     }
     assert.equal(result, true);
@@ -64,7 +65,8 @@ contract("TestSolnSquareVerifier", accounts => {
       await this.contract.mint(account2, tokenID, { from: account1 });
       result = true
     } catch(e) {
-      result = false
+      console.log(false);
+      result = false;
     }
     assert.equal(result, true);
   });
