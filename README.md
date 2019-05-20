@@ -47,6 +47,8 @@ The capstone will build upon the knowledge gained in the course in order to buil
   ~/zokrates export-verifier
   ```
 
+Re-run steps 5 and 6 with different arguments, e.g. 2 4, to generate additional proofs for minting tokens.
+
 ## Requirements
 
 Graded according to the [Project Rubric](https://review.udacity.com/#!/rubrics/1712/view).
