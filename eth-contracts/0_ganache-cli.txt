@@ -1,0 +1,42 @@
+Ganache CLI v6.4.3 (ganache-core: 2.5.5)
+
+Available Accounts
+==================
+(0) 0x6b7a64ed8be6c748fea3deb7f30c3d10e44cdced (~100 ETH)
+(1) 0xdd1e815fa6f1913f0e0adfa831d474c21d0a8d91 (~100 ETH)
+(2) 0x2a0668826a7505f72649f14c71d8290e13b802b7 (~100 ETH)
+(3) 0xec7d9247f106a24c442b4628fd0515d29e79e131 (~100 ETH)
+(4) 0xd06230a32f6cca1d72f086a594af5e7b8d67f016 (~100 ETH)
+(5) 0xe55f21bfbc3d3a534b7f95336232b4abf1c4a3e8 (~100 ETH)
+(6) 0x03cb6d7f2ba941e78ad151b60fc75216639cc310 (~100 ETH)
+(7) 0x28f4ebd33370346e60d73b76d58e112bcbf5c20a (~100 ETH)
+(8) 0xbcdbf6d2022e773e50d04ca1c5b2f313d4c3325a (~100 ETH)
+(9) 0x331037c18c68bdee1f7998d45bb6403bc0deb9cb (~100 ETH)
+
+Private Keys
+==================
+(0) 0x271cdfe2e74fa13aa1c4d6e2021370a8675892091b74e8a4b1a7f501a60a3a42
+(1) 0x9dfe8075ed0ce41286e4fac2d05e7a44b24e4b75ef7d39621ccb8106b7b45f29
+(2) 0xeb71cd89bcc21c55f481abbfe8be942ae08262f323e5952c466075642fd6e190
+(3) 0x65ea4f648f385fe1b189b064d8547f9a6691702bd3baeaf9f0cb6a67e350ba31
+(4) 0x2713248b4346fe8ee33e86e126206840cb002ace6de4af8c53fe1e8993b4c37c
+(5) 0x50a9eb8c598b87249f26dac13d8214f0172acb46496d4f41102b01fb12d6bf40
+(6) 0xd48e89b5d21b553c308105bfd4d5bfe307e0b793678635a4ac63b33450eaaaab
+(7) 0x963615ba6516efb11eac00d7b09e4514b490315549e3e9e6914e26fe6922f4e0
+(8) 0x8527cb114ef06a51ea449ad178e7b7f395faa74030d2a285d171117add4a2ff4
+(9) 0x361338fefa731211c50b4907289c695100ed18235d5b982da4dae8a6a10fd798
+
+HD Wallet
+==================
+Mnemonic:      tattoo endless undo gold uniform deny era mean spot width execute impose
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+
+Gas Price
+==================
+20000000000
+
+Gas Limit
+==================
+6721975
+
+Listening on 127.0.0.1:8545
