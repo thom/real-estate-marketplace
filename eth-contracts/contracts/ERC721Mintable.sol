@@ -536,7 +536,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
   // TIP #2: you can also use uint2str() to convert a uint to a string
   // see https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol for strConcat()
   // require the token exists before setting
-  function setTokenURI(uint256 tokenId) internal {
+  function _setTokenURI(uint256 tokenId) internal {
     require(_exists(tokenId), "token does not exist");
     _tokenURIs[tokenId] = usingOraclize.strConcat(_baseTokenURI, usingOraclize.uint2str(tokenId));
   }
