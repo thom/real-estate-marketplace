@@ -20,9 +20,9 @@ contract('TestERC721Mintable', accounts => {
   ///(8) 0xbcdbf6d2022e773e50d04ca1c5b2f313d4c3325a
   ///(9) 0x331037c18c68bdee1f7998d45bb6403bc0deb9cb
 
-  console.log("TestERC721Mintable:")
-  console.log("Account one: accounts[0] ", accounts[0])
-  console.log("Account two: accounts[1] ", accounts[1])
+  console.log("TestERC721Mintable:");
+  console.log("Account one: accounts[0] ", accounts[0]);
+  console.log("Account two: accounts[1] ", accounts[1]);
 
   describe('match erc721 spec', function () {
     beforeEach(async function () { 
@@ -36,12 +36,12 @@ contract('TestERC721Mintable', accounts => {
       for (var i = totalSupplyAccount1; i < totalSupply; i++) {
           await this.contract.mint(account2, i, {from: account1});
       }
-    })
+    });
 
     it('should return total supply', async function () { 
       let result = await this.contract.totalSupply.call();
-      assert.equal(totalSupply, result)
-    })
+      assert.equal(totalSupply, result);
+    });
 
     it('should get token balance', async function () {
       let result = await this.contract.balanceOf(account1);
@@ -49,13 +49,13 @@ contract('TestERC721Mintable', accounts => {
 
       result = await this.contract.balanceOf(account2);
       assert.equal(totalSupplyAccount2, result);
-    })
+    });
 
     // Token URI should be complete i.e: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1
     it('should return token URI', async function () { 
       let result = await this.contract.tokenURI(1);
       assert.equal("https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1", result);
-    })
+    });
 
     it('should transfer token from one owner to another', async function () { 
       await this.contract.transferFrom(account2, account1, (totalSupply-1), {from: account2});
@@ -70,25 +70,25 @@ contract('TestERC721Mintable', accounts => {
 
       result = await this.contract.totalSupply.call();
       assert.equal(totalSupply, result, "total supply stays");
-    })
+    });
   });
 
   describe('have ownership properties', function () {
     beforeEach(async function () { 
       this.contract = await NipaHutERC721Token.new({from: account1});
-    })
+    });
 
     it('should fail when minting when address is not contract owner', async function () { 
       try {
         await this.contract.mint(account2, 1, {from: account2});
       } catch(err) {
-        assert.equal(err.reason, "caller must be the contract owner")
+        assert.equal(err.reason, "caller must be the contract owner");
       }
-    })
+    });
 
     it('should return contract owner', async function () { 
       let result = await this.contract.owner();
       assert.equal(account1, result);
-    })
+    });
   });
 })

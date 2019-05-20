@@ -3,7 +3,7 @@ var SquareVerifier = artifacts.require('SquareVerifier');
 const zokratesProof = require("../../zokrates/code/square/proof.json");
 
 contract('TestSquareVerifier', accounts => {
-  const ownerID = accounts[0];
+  const owner = accounts[0];
 
   ///Available Accounts
   ///==================
@@ -18,11 +18,11 @@ contract('TestSquareVerifier', accounts => {
   ///(8) 0xbcdbf6d2022e773e50d04ca1c5b2f313d4c3325a
   ///(9) 0x331037c18c68bdee1f7998d45bb6403bc0deb9cb
 
-  console.log("TestSquareVerifier:")
-  console.log("Contract Owner: accounts[0] ", accounts[0])
+  console.log("TestSquareVerifier:");
+  console.log("Contract Owner: accounts[0] ", accounts[0]);
 
   beforeEach(async() => {
-      this.contract = await SquareVerifier.new({from: ownerID});
+      this.contract = await SquareVerifier.new({from: owner});
   });
 
   // Test verification with correct proof
@@ -35,6 +35,6 @@ contract('TestSquareVerifier', accounts => {
   // Test verification with incorrect proof
   it("should not verify incorrect proof", async() => {
     let result = await this.contract.verifyTx.call(...Object.values(zokratesProof.proof), [42, 23]);
-    assert.equal(result, false)
+    assert.equal(result, false);
   });
 });
