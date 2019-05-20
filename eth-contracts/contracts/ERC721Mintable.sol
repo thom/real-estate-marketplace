@@ -7,18 +7,41 @@ import 'openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol';
 import "./Oraclize.sol";
 
 contract Ownable {
-    //  TODO's
-    //  1) create a private '_owner' variable of type address with a public getter function
-    //  2) create an internal constructor that sets the _owner var to the creater of the contract 
-    //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.
-    //  4) fill out the transferOwnership function
-    //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)
+  // In real projects, I suggest using 'openzeppelin-solidity/contracts/ownership/Ownable.sol' instead of re-implementing it!
+  // 1) create a private '_owner' variable of type address with a public getter function
+  address private _owner;
 
-    function transferOwnership(address newOwner) public onlyOwner {
-        // TODO add functionality to transfer control of the contract to a newOwner.
-        // make sure the new owner is a real address
+  function owner() public view returns (address) {
+      return _owner;
+  }
 
-    }
+  // 2) create an internal constructor that sets the _owner var to the creater of the contract 
+  constructor () internal {
+    _owner = msg.sender;
+    emit OwnershipTransferred(address(0), _owner);
+  }
+
+  // 3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.
+  function isOwner() public view returns (bool) {
+    return msg.sender == _owner;
+  }
+
+  modifier onlyOwner() {
+    require(isOwner(), "caller must be the contract owner");
+    _;
+  }
+
+  // 4) create an event that emits anytime ownerShip is transfered (including in the constructor)
+  event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+
+  // 5) fill out the transferOwnership function
+  function transferOwnership(address newOwner) public onlyOwner {
+    // Add functionality to transfer control of the contract to a newOwner.
+    // Make sure the new owner is a real address
+    require(newOwner != address(0), "owner must be valid address");
+    emit OwnershipTransferred(_owner, newOwner);
+    _owner = newOwner;
+  }
 }
 
 //  TODO's: Create a Pausable contract that inherits from the Ownable contract
@@ -64,7 +87,7 @@ contract ERC165 {
     }
 }
 
-contract ERC721 is Pausable, ERC165 {
+contract ERC721 is /*Pausable,*/ ERC165 { // TODO
 
     event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
 
@@ -438,7 +461,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 
     function tokenURI(uint256 tokenId) external view returns (string memory) {
         require(_exists(tokenId));
-        return _tokenURIs[tokenId];
+        //return _tokenURIs[tokenId]; TODO
     }
 
 
@@ -459,6 +482,3 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 //      -takes in a 'to' address, tokenId, and tokenURI as parameters
 //      -returns a true boolean upon completion of the function
 //      -calls the superclass mint and setTokenURI functions
-
-
-
