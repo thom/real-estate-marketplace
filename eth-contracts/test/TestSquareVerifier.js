@@ -18,7 +18,7 @@ contract('TestSquareVerifier', accounts => {
   ///(8) 0xbcdbf6d2022e773e50d04ca1c5b2f313d4c3325a
   ///(9) 0x331037c18c68bdee1f7998d45bb6403bc0deb9cb
 
-  console.log("ganache-cli accounts used here...")
+  console.log("TestSquareVerifier:")
   console.log("Contract Owner: accounts[0] ", accounts[0])
 
   beforeEach(async() => {
@@ -27,13 +27,13 @@ contract('TestSquareVerifier', accounts => {
 
   // Test verification with correct proof
   // - use the contents from proof.json generated from zokrates steps
-  it("01. Test verification with correct proof", async() => {
+  it("should verify correct proof", async() => {
     let result = await this.contract.verifyTx.call(...Object.values(zokratesProof.proof), zokratesProof.inputs);
     assert.equal(result, true)
   });
     
   // Test verification with incorrect proof
-  it("02. Test verification with incorrect proof", async() => {
+  it("should not verify incorrect proof", async() => {
     let result = await this.contract.verifyTx.call(...Object.values(zokratesProof.proof), [42, 23]);
     assert.equal(result, false)
   });
