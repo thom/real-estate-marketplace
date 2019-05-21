@@ -120,11 +120,23 @@ The smart contracts are deployed on the Ethereum Rinkeby test network:
 
 ## Minting tokens
 
-TBD
+Before tokens can be minted, a new solution for the given token ID needs to be submitted, e.g.:
+
+```node submit-solution.js ../zokrates/code/square/proofs/5/proof.json 5```
+
+Now the token can be minted, e.g.:
+
+```node mint-token.js 5```
 
 ## Generate OpenSea marketplace
 
 TBD
+
+https://rinkeby.opensea.io/get-listed/
+
+https://rinkeby.opensea.io/get-listed/step-two
+
+0xC74013ee20CeD12A2D531594D71585E22168b9e2
 
 ## Requirements
 
