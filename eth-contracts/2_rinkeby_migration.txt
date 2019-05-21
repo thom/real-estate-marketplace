@@ -1,0 +1,169 @@
+truffle migrate --network rinkeby --reset
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x6accce
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        4419593
+   > block timestamp:     1558423427
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.563065416
+   > gas used:            246393
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00246393 ETH
+
+   -------------------------------------
+   > Total cost:          0.00246393 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'NipaHutERC721Token'
+   ------------------------------
+   > block number:        4419595
+   > block timestamp:     1558423443
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.528841626
+   > gas used:            3395356
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03395356 ETH
+
+
+   Deploying 'SquareVerifier'
+   --------------------------
+   > block number:        4419596
+   > block timestamp:     1558423454
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.516887566
+   > gas used:            1195406
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01195406 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > block number:        4419597
+   > block timestamp:     1558423467
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.476705276
+   > gas used:            4018229
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04018229 ETH
+
+   -------------------------------------
+   > Total cost:          0.08608991 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.08855384 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x6adc61
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xedf2023db1c8c7e3b61f2432bece5de88202c7b69524f48aa663f38616ed1ad4
+   > Blocks: 0            Seconds: 5
+   > contract address:    0x6c4Dd87d3Ed4ff1122f6afAc17104D28abb7350B
+   > block number:        4419596
+   > block timestamp:     1558423491
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.562915416
+   > gas used:            261393
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00261393 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00261393 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'NipaHutERC721Token'
+   ------------------------------
+   > transaction hash:    0x1ee993aea4a1e5fff2706591eb1a7d489a77c1d2343b155b757db7817fa24c22
+   > Blocks: 2            Seconds: 36
+   > contract address:    0x255837801Cd69aEd704Da884aF5BC2e2E14013db
+   > block number:        4419600
+   > block timestamp:     1558423551
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.527041626
+   > gas used:            3545356
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03545356 ETH
+
+
+   Deploying 'SquareVerifier'
+   --------------------------
+   > transaction hash:    0x69d83744b4c6e8c22555bea850678a1d87a1b954d6524dc9f00c8c41a2f450e0
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3
+   > block number:        4419601
+   > block timestamp:     1558423566
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.515087566
+   > gas used:            1195406
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01195406 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > transaction hash:    0x570c6cb0977af3fda1efa6eebacf283008e7ccc55746ae8947b92ab3a1983e8c
+   > Blocks: 0            Seconds: 5
+   > contract address:    0xC74013ee20CeD12A2D531594D71585E22168b9e2
+   > block number:        4419602
+   > block timestamp:     1558423581
+   > account:             0x211ea9b3606B470631818540E75dCeb0D5d54d38
+   > balance:             20.473255276
+   > gas used:            4183229
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04183229 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.08923991 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.09185384 ETH
