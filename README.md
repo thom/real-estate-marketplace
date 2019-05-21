@@ -134,7 +134,7 @@ Use the [OpenSea Rinkeby environment](https://rinkeby.opensea.io/get-listed/step
 
 After listing, the marketplace should look like this:
 
-![OpenSea Rinkeby marketplase](images/opensea.png)
+![OpenSea Rinkeby marketplace](images/opensea.png)
 
 Check out the Nipa Hut Token assets on OpenSea: [https://rinkeby.opensea.io/category/nipahuttoken](https://rinkeby.opensea.io/category/nipahuttoken)
 
