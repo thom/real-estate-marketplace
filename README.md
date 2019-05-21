@@ -114,9 +114,9 @@ Execute the following command deploy the contracts to Rinkeby:
 ```truffle migrate --network rinkeby --reset```
 
 The smart contracts are deployed on the Ethereum Rinkeby test network:
-* NipaHutERC721Token: [0x255837801Cd69aEd704Da884aF5BC2e2E14013db](https://rinkeby.etherscan.io/address/0x255837801Cd69aEd704Da884aF5BC2e2E14013db)
-* SquareVerifier: [0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3](https://rinkeby.etherscan.io/address/0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3)
-* SolnSquareVerifier: [0xC74013ee20CeD12A2D531594D71585E22168b9e2](https://rinkeby.etherscan.io/address/0xC74013ee20CeD12A2D531594D71585E22168b9e2)
+* NipaHutERC721Token: [```0x255837801Cd69aEd704Da884aF5BC2e2E14013db```](https://rinkeby.etherscan.io/address/0x255837801Cd69aEd704Da884aF5BC2e2E14013db)
+* SquareVerifier: [```0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3```](https://rinkeby.etherscan.io/address/0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3)
+* SolnSquareVerifier: [```0xC74013ee20CeD12A2D531594D71585E22168b9e2```](https://rinkeby.etherscan.io/address/0xC74013ee20CeD12A2D531594D71585E22168b9e2)
 
 ## Minting tokens
 
@@ -130,13 +130,13 @@ Now the token can be minted, e.g.:
 
 ## Generate OpenSea marketplace
 
-TBD
+Use the [OpenSea Rinkeby environment](https://rinkeby.opensea.io/get-listed/step-two) to list the SolnSquareVerifier token (```0xC74013ee20CeD12A2D531594D71585E22168b9e2```).
 
-https://rinkeby.opensea.io/get-listed/
+After listing, the marketplace should look like this:
 
-https://rinkeby.opensea.io/get-listed/step-two
+![OpenSea Rinkeby marketplase](images/opensea.png)
 
-0xC74013ee20CeD12A2D531594D71585E22168b9e2
+Check out the Nipa Hut Token assets on OpenSea: [https://rinkeby.opensea.io/category/nipahuttoken](https://rinkeby.opensea.io/category/nipahuttoken)
 
 ## Requirements
 
