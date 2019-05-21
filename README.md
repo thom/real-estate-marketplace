@@ -22,7 +22,7 @@ npm install
 
 Change into the contracts folder:
 
-```cd eth-contracts``
+```cd eth-contracts```
 
 Launch Ganache:
 
