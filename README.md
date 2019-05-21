@@ -1,8 +1,62 @@
 # Capstone: Real Estate Marketplace
 
-The capstone will build upon the knowledge gained in the course in order to build a decentralized housing product. 
+The capstone will build upon the knowledge gained in the course in order to build a decentralized housing product.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Please make sure you've already installed ganache-cli, Truffle and enabled the MetaMask extension in your browser.
+
+### Installing
+
+A step by step series of examples that tell you have to get a development environment running.
+
+Clone this repository and install all requisite npm packages (as listed in ```package.json```):
+
+```
+npm install
+```
+
+Change into the contracts folder:
+
+```cd eth-contracts``
+
+Launch Ganache:
+
+```
+ganache-cli -m "tattoo endless undo gold uniform deny era mean spot width execute impose"
+```
+
+In a separate terminal window, compile the smart contracts:
+
+```
+truffle compile
+```
+
+This will create the smart contract artifacts in folder ```build/contracts```.
+
+Migrate smart contracts to the locally running blockchain, ganache-cli:
+
+```
+truffle migrate
+```
+
+Test the smart contracts:
+
+```
+truffle test
+```
+
+All 11 tests should pass and your terminal should look something like this:
+
+![truffle test](images/truffle_test.png)
 
 ## ZoKrates
+
+The code repository already contains 10 pre-generated proofs that have been used to mint 10 tokens. The following instructions explain how the proofs have been generated.
 
 * Step 1: Run Docker
   ```
@@ -48,6 +102,29 @@ The capstone will build upon the knowledge gained in the course in order to buil
   ```
 
 Re-run steps 5 and 6 with different arguments, e.g. 2 4, to generate additional proofs for minting tokens.
+
+## Deploy smart contracts on a public test network (Rinkeby)
+
+Create the following files in the ```eth-contracts``` folder:
+* ```.infura-key```: Your [Infura](https://infura.io/) key
+* ```.mnemonic```: Your [MetaMask](https://metamask.io/) seed phrase (mnemonic)
+
+Execute the following command deploy the contracts to Rinkeby:
+
+```truffle migrate --network rinkeby --reset```
+
+The smart contracts are deployed on the Ethereum Rinkeby test network:
+* NipaHutERC721Token: [0x255837801Cd69aEd704Da884aF5BC2e2E14013db](https://rinkeby.etherscan.io/address/0x255837801Cd69aEd704Da884aF5BC2e2E14013db)
+* SquareVerifier: [0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3](https://rinkeby.etherscan.io/address/0xB8a0dc165DECF0e5a28a5EB8F9b7e6605235eBD3)
+* SolnSquareVerifier: [0xC74013ee20CeD12A2D531594D71585E22168b9e2](https://rinkeby.etherscan.io/address/0xC74013ee20CeD12A2D531594D71585E22168b9e2)
+
+## Minting tokens
+
+TBD
+
+## Generate OpenSea marketplace
+
+TBD
 
 ## Requirements
 
