@@ -1,4 +1,4 @@
-# Capstone: Real Estate Marketplace
+# Udacity Blockchain Developer Nanodegree Program - Capstone: Real Estate Marketplace
 
 The capstone will build upon the knowledge gained in the course in order to build a decentralized housing product.
 
