@@ -159,3 +159,8 @@ Graded according to the [Project Rubric](https://review.udacity.com/#!/rubrics/1
 * Solidity - ^0.5.2 (solc-js)
 * Node v10.15.3
 * Web3.js v1.0.0-beta.37
+
+## License
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2019 © <a href="https://github.com/thom" target="_blank">Thomas Weibel</a>.
